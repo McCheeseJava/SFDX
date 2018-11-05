@@ -83,6 +83,11 @@ sfdx force:package:version:promote -p 04tf4000004B4IgAAK -v MyTP
   
 command to create Apex classes:
 sfdx force:apex:class:create -n AccountController -d force-app/main/default/classes
+sfdx force:source:status
+sfdx force:source:push
+
+if push doesn't work try the following:
+  
 sfdx force:source:deploy -p force-app/main/default/classes/
 === Deployed Source
 FULL NAME          TYPE       PROJECT PATH
