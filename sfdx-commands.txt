@@ -76,6 +76,8 @@ sfdx force:package:version:promote -p 04tf4000004B4IgAAK -v MyTP
  1189  sfdx force:user:permset:assign -n Geolocation
  ###pull sfdx org to local filesystem
   sfdx force:source:pull 
+  sfdx force:data:tree:export -q "SELECT Name FROM Account" -d ./data
+  sfdx force:data:tree:import --sobjecttreefiles data/data/Account.json
 
 git clone https://github.com/dreamhouseapp/dreamhouse-sfdx.git
 sfdx force:package:create --help
