@@ -133,5 +133,27 @@ jobid:  09S3B0000012YxIUAU
 Status:  Succeeded
 jobid:  09S3B0000012YxIUAU
 
+rm unpackaged.zip 
+sfdx force:mdapi:convert -r mdapipackage/
+
+| => pwd
+/Users/anassiry/SFDX/SFDX/MutualFundExplorer/mdapipackage
+________________________________________________________________________________
+| ~/SFDX/SFDX/MutualFundExplorer/mdapipackage @ anassiry-ltm2 (anassiry) 
+| => ll
+total 4
+drwxr-xr-x   3 anassiry  wheel    96B Nov  5 10:11 applications/
+drwxr-xr-x  16 anassiry  wheel   512B Nov  5 10:11 aura/
+drwxr-xr-x   6 anassiry  wheel   192B Nov  5 10:12 classes/
+drwxr-xr-x   4 anassiry  wheel   128B Nov  5 10:11 contentassets/
+drwxr-xr-x   4 anassiry  wheel   128B Nov  5 10:11 flexipages/
+drwxr-xr-x   3 anassiry  wheel    96B Nov  5 10:11 globalValueSets/
+drwxr-xr-x   4 anassiry  wheel   128B Nov  5 10:11 layouts/
+drwxr-xr-x   4 anassiry  wheel   128B Nov  5 10:11 objects/
+-rw-r--r--   1 anassiry  wheel   2.6K Nov  5  2018 package.xml
+drwxr-xr-x   6 anassiry  wheel   192B Nov  5 10:11 staticresources/
+drwxr-xr-x   5 anassiry  wheel   160B Nov  5 10:11 tabs/
+
+sfdx force:org:delete -u TempUnmanagedy
 
 [g#17hdNH*
