@@ -114,3 +114,7 @@ You can see the password again by running "sfdx force:user:display -u test-7bzkp
 How to login to your scratch org
 sfdx force:auth:web:login -r https://test.salesforce.com --setdefaultdevhubusername --setalias MyScratchOrg
 use above username/password
+
+How to push to your scratch org
+sfdx force:source:push -u MyScratchOrg
+
