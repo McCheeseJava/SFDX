@@ -120,4 +120,18 @@ sfdx force:source:push -u MyScratchOrg
 sfdx force:source:pull -u MyScratchOrg
 
 
+Convert and Deploy an Existing App
+
+mkdir mdapipackage
+sfdx force:mdapi:retrieve -s -r ./mdapipackage -p DreamInvest -u TempUnmanaged -w 10
+
+Retrieving source...
+=== Status
+Status:  Pending
+jobid:  09S3B0000012YxIUAU
+=== Result
+Status:  Succeeded
+jobid:  09S3B0000012YxIUAU
+
+
 [g#17hdNH*
