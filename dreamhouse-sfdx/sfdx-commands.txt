@@ -1,0 +1,80 @@
+anassiry@brave-bear-387415.com
+anassiry@cunning-hawk-a4pfor.com
+
+Haywire9538
+
+Login to your org
+
+sfdx force:auth:web:login --setdefaultdevhubusername --setalias MyTP
+2
+
+
+a = alias
+d = set the authenticated org as the default dev
+                                 hub org for scratch org creation
+
+sfdx force:auth:web:login -a MyTP
+sfdx force:auth:web:login -d -a MyTP
+sfdx force:config:set defaultusername=anassiry@cunning-hawk-a4pfor.com
+sfdx force:org:open -u MyTP
+
+Create your package:
+
+sfdx force:package:create --name th-dreamhouse --description "My Package" --packagetype Unlocked --path force-app --nonamespace --targetdevhubusername MyTP
+
+Create version for your package
+
+sfdx force:package:version:create -p th-dreamhouse -d force-app -k test1234 --wait 10 -v MyTP
+
+sfdx force:org:list
+
+sfdx force:org:list --all
+
+Create your scratch Org
+
+sfdx force:org:create --definitionfile config/project-scratch-def.json --durationdays 30 --setalias MyScratchOrg -v MyTP
+
+Install your package in the Scratch Org just created:
+sfdx force:package:install --wait 10 --publishwait 10 --package 04tf4000004B4A1AAK -k test1234 -r -u MyScratchOrg
+
+
+Open your scratch Org 
+sfdx force:org:open -u MyScratchOrg
+
+Release the package to indicate package testing has completed and it’s UAT/Sandbox ready:
+sfdx force:package:version:promote -p 04tf4000004B4A1AAK -v MyTP
+
+Login to your org with alias
+sfdx force:auth:web:login -a MyTP
+
+
+Install package in your org
+sfdx force:package:install --wait 10 --publishwait 10 --package  04tf4000004B4A1AAK -k test1234 -r -u MyTP
+
+
+
+Start over make changes
+
+Change package desc:
+  sfdx force:package:update -p 0Hof4000000KyncCAC  -d  "My DreamHouse Package"
+
+Create new version
+Update the .json file
+  sfdx force:package:version:create -p th-dreamhouse -d force-app -k test1234 --wait 10 -v MyTP
+
+Package Version Create Request
+sfdx force:package:version:create:report -i 08cf4000000Kyr5AAC
+
+sfdx force:package:version:list
+
+sfdx force:package:version:promote -p 04tf4000004B4IgAAK -v MyTP
+
+
+
+
+
+git clone https://github.com/dreamhouseapp/dreamhouse-sfdx.git
+sfdx force:package:create --help
+cd dreamhouse
+sfdx force:package:uninstall --package 04t1I0000036seVQAQ 
+sfdx force:package:uninstall --package 0Hof4000000k9ixCAA
