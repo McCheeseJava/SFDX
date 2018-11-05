@@ -4,19 +4,14 @@ anassiry@cunning-hawk-a4pfor.com
 Login to your org
 
 sfdx force:auth:web:login --setdefaultdevhubusername --setalias MyTP
-
-same as
-
+sfdx force:config:set defaultusername=anassiry@cunning-hawk-a4pfor.com
 sfdx force:auth:web:login -d -s -a MyTP
-
 s = set the authenticated org as the default username that all commands run against
 a = alias
 d = set the authenticated org as the default dev hub org for scratch org creation
 
-sfdx force:auth:web:login -a MyTP
-sfdx force:auth:web:login -d -a MyTP
-sfdx force:config:set defaultusername=anassiry@cunning-hawk-a4pfor.com
 sfdx force:org:open -u MyTP
+sfdx force:limits:api:display -u MyTP
 
 Create your package:
 
@@ -71,7 +66,16 @@ sfdx force:package:version:promote -p 04tf4000004B4IgAAK -v MyTP
 
 
 
+## Create a new App
 
+ 1169  sfdx force:project:create -n geolocation
+ 1185  sfdx force:auth:web:login --setdefaultdevhubusername --setalias MyTP
+ 1186  sfdx force:config:set defaultusername=anassiry@cunning-hawk-a4pfor.com
+ 1187  sfdx force:org:create -s -f config/project-scratch-def.json -a GeoAppScratch
+ 1188  sfdx force:org:open -u GeoAppScratch
+ 1189  sfdx force:user:permset:assign -n Geolocation
+ ###pull sfdx org to local filesystem
+  sfdx force:source:pull 
 
 git clone https://github.com/dreamhouseapp/dreamhouse-sfdx.git
 sfdx force:package:create --help
