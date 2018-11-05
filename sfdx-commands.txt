@@ -4,12 +4,14 @@ anassiry@cunning-hawk-a4pfor.com
 Login to your org
 
 sfdx force:auth:web:login --setdefaultdevhubusername --setalias MyTP
-2
 
+same as
 
+sfdx force:auth:web:login -d -s -a MyTP
+
+s = set the authenticated org as the default username that all commands run against
 a = alias
-d = set the authenticated org as the default dev
-                                 hub org for scratch org creation
+d = set the authenticated org as the default dev hub org for scratch org creation
 
 sfdx force:auth:web:login -a MyTP
 sfdx force:auth:web:login -d -a MyTP
