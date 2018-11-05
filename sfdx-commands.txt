@@ -108,7 +108,7 @@ Set password for your scratch org. Scratch orgs are accessible from test.salesfo
 
 sfdx force:user:password:generate --targetusername test-7bzkprjg2mhu@example.com
 
-Successfully set the password "[g#17hdNH*" for user test-7bzkprjg2mhu@example.com.
+Successfully set the password "*****" for user test-7bzkprjg2mhu@example.com.
 You can see the password again by running "sfdx force:user:display -u test-7bzkprjg2mhu@example.com".
 
 How to login to your scratch org
