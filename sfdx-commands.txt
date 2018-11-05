@@ -1,8 +1,6 @@
 anassiry@brave-bear-387415.com
 anassiry@cunning-hawk-a4pfor.com
 
-Haywire9538
-
 Login to your org
 
 sfdx force:auth:web:login --setdefaultdevhubusername --setalias MyTP
