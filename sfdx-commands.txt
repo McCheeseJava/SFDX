@@ -157,3 +157,9 @@ drwxr-xr-x   5 anassiry  wheel   160B Nov  5 10:11 tabs/
 sfdx force:org:delete -u TempUnmanagedy
 
 [g#17hdNH*
+
+
+You can access this url from your Scratch Org to install this Package on your Scratch Org
+
+https://efficiency-drive-9820-dev-ed.lightning.force.com/packagingSetupUI/ipLanding.app?apvId=04tf4000004BO2KAAW
+It will ask your for a .  is test1234
