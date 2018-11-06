@@ -1,0 +1,165 @@
+anassiry@brave-bear-387415.com
+anassiry@cunning-hawk-a4pfor.com
+
+Login to your org
+
+sfdx force:auth:web:login --setdefaultdevhubusername --setalias MyTP
+sfdx force:config:set defaultusername=anassiry@cunning-hawk-a4pfor.com
+sfdx force:auth:web:login -d -s -a MyTP
+s = set the authenticated org as the default username that all commands run against
+a = alias
+d = set the authenticated org as the default dev hub org for scratch org creation
+
+sfdx force:org:open -u MyTP
+sfdx force:limits:api:display -u MyTP
+
+Create your package:
+
+sfdx force:package:create --name th-dreamhouse --description "My Package" --packagetype Unlocked --path force-app --nonamespace --targetdevhubusername MyTP
+
+Create version for your package
+
+sfdx force:package:version:create -p th-dreamhouse -d force-app -k test1234 --wait 10 -v MyTP
+
+sfdx force:org:list
+
+sfdx force:org:list --all
+
+Create your scratch Org
+
+sfdx force:org:create --definitionfile config/project-scratch-def.json --durationdays 30 --setalias MyScratchOrg -v MyTP
+
+sfdx force:org:display
+
+Install your package in the Scratch Org just created:
+sfdx force:package:install --wait 10 --publishwait 10 --package 04tf4000004B4A1AAK -k test1234 -r -u MyScratchOrg
+
+
+Open your scratch Org 
+sfdx force:org:open -u MyScratchOrg
+
+Release the package to indicate package testing has completed and it’s UAT/Sandbox ready:
+sfdx force:package:version:promote -p 04tf4000004B4A1AAK -v MyTP
+
+Login to your org with alias
+sfdx force:auth:web:login -a MyTP
+
+
+Install package in your org
+sfdx force:package:install --wait 10 --publishwait 10 --package  04tf4000004B4A1AAK -k test1234 -r -u MyTP
+
+
+
+Start over make changes
+
+Change package desc:
+  sfdx force:package:update -p 0Hof4000000KyncCAC  -d  "My DreamHouse Package"
+
+Create new version
+Update the .json file
+  sfdx force:package:version:create -p th-dreamhouse -d force-app -k test1234 --wait 10 -v MyTP
+
+Package Version Create Request
+sfdx force:package:version:create:report -i 08cf4000000Kyr5AAC
+
+sfdx force:package:version:list
+
+sfdx force:package:version:promote -p 04tf4000004B4IgAAK -v MyTP
+
+
+
+## Create a new App
+
+ 1169  sfdx force:project:create -n geolocation
+ 1185  sfdx force:auth:web:login --setdefaultdevhubusername --setalias MyTP
+ 1186  sfdx force:config:set defaultusername=anassiry@cunning-hawk-a4pfor.com
+ 1187  sfdx force:org:create -s -f config/project-scratch-def.json -a GeoAppScratch
+ 1188  sfdx force:org:open -u GeoAppScratch
+ 1189  sfdx force:user:permset:assign -n Geolocation
+ ###pull sfdx org to local filesystem
+  sfdx force:source:pull 
+  sfdx force:data:tree:export -q "SELECT Name FROM Account" -d ./data
+  sfdx force:data:tree:import --sobjecttreefiles data/data/Account.json
+  
+command to create Apex classes:
+sfdx force:apex:class:create -n AccountController -d force-app/main/default/classes
+sfdx force:source:status
+sfdx force:source:push
+
+if push doesn't work try the following:
+  
+sfdx force:source:deploy -p force-app/main/default/classes/
+=== Deployed Source
+FULL NAME          TYPE       PROJECT PATH
+─────────────────  ─────────  ─────────────────────────────────────────────────────────────
+AccountController  ApexClass  force-app/main/default/classes/AccountController.cls
+AccountController  ApexClass  force-app/main/default/classes/AccountController.cls-meta.xml
+________________________________________________________________________________
+
+
+Command to create Lighening component
+sfdx force:lightning:component:create -n AccountLocator -d force-app/main/default/aura
+sfdx force:source:deploy -p force-app/main/default/aura/
+=== Deployed Source
+
+Open your Scratch Org:  sfdx force:org:open
+
+Set password for your scratch org. Scratch orgs are accessible from test.salesforce.com
+
+sfdx force:user:password:generate --targetusername test-7bzkprjg2mhu@example.com
+
+Successfully set the password "*****" for user test-7bzkprjg2mhu@example.com.
+You can see the password again by running "sfdx force:user:display -u test-7bzkprjg2mhu@example.com".
+
+How to login to your scratch org
+sfdx force:auth:web:login -r https://test.salesforce.com --setdefaultdevhubusername --setalias MyScratchOrg
+use above username/password
+
+How to push/pull to/from your scratch org
+sfdx force:source:push -u MyScratchOrg
+sfdx force:source:pull -u MyScratchOrg
+
+
+Convert and Deploy an Existing App
+
+mkdir mdapipackage
+sfdx force:mdapi:retrieve -s -r ./mdapipackage -p DreamInvest -u TempUnmanaged -w 10
+
+Retrieving source...
+=== Status
+Status:  Pending
+jobid:  09S3B0000012YxIUAU
+=== Result
+Status:  Succeeded
+jobid:  09S3B0000012YxIUAU
+
+rm unpackaged.zip 
+sfdx force:mdapi:convert -r mdapipackage/
+
+| => pwd
+/Users/anassiry/SFDX/SFDX/MutualFundExplorer/mdapipackage
+________________________________________________________________________________
+| ~/SFDX/SFDX/MutualFundExplorer/mdapipackage @ anassiry-ltm2 (anassiry) 
+| => ll
+total 4
+drwxr-xr-x   3 anassiry  wheel    96B Nov  5 10:11 applications/
+drwxr-xr-x  16 anassiry  wheel   512B Nov  5 10:11 aura/
+drwxr-xr-x   6 anassiry  wheel   192B Nov  5 10:12 classes/
+drwxr-xr-x   4 anassiry  wheel   128B Nov  5 10:11 contentassets/
+drwxr-xr-x   4 anassiry  wheel   128B Nov  5 10:11 flexipages/
+drwxr-xr-x   3 anassiry  wheel    96B Nov  5 10:11 globalValueSets/
+drwxr-xr-x   4 anassiry  wheel   128B Nov  5 10:11 layouts/
+drwxr-xr-x   4 anassiry  wheel   128B Nov  5 10:11 objects/
+-rw-r--r--   1 anassiry  wheel   2.6K Nov  5  2018 package.xml
+drwxr-xr-x   6 anassiry  wheel   192B Nov  5 10:11 staticresources/
+drwxr-xr-x   5 anassiry  wheel   160B Nov  5 10:11 tabs/
+
+sfdx force:org:delete -u TempUnmanagedy
+
+[g#17hdNH*
+
+
+You can access this url from your Scratch Org to install this Package on your Scratch Org
+
+https://efficiency-drive-9820-dev-ed.lightning.force.com/packagingSetupUI/ipLanding.app?apvId=04tf4000004BO2KAAW
+It will ask your for a .  is test1234
