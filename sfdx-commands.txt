@@ -163,3 +163,7 @@ You can access this url from your Scratch Org to install this Package on your Sc
 
 https://efficiency-drive-9820-dev-ed.lightning.force.com/packagingSetupUI/ipLanding.app?apvId=04tf4000004BO2KAAW
 It will ask your for a .  is test1234
+
+https://trailhead.salesforce.com/content/learn/modules/unlocked-packages-for-customers/build-your-first-unlocked-package
+Create the Package Version and Install It in Your Scratch Org
+When you’re ready to release the package, you create a snapshot of it, called a package version. Installing the package version is similar to deploying metadata. Remember, once created, a package version serves as an immutable artifact containing a specific set of metadata.
