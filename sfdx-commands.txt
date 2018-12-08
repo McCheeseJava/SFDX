@@ -1,5 +1,3 @@
-anassiry@brave-bear-387415.com
-anassiry@cunning-hawk-a4pfor.com
 
 Login to your org
 
@@ -156,7 +154,6 @@ drwxr-xr-x   5 anassiry  wheel   160B Nov  5 10:11 tabs/
 
 sfdx force:org:delete -u TempUnmanagedy
 
-[g#17hdNH*
 
 
 You can access this url from your Scratch Org to install this Package on your Scratch Org
