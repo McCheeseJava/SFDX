@@ -165,288 +165,288 @@
 
     <types>
         <members>*</members>
-        <name> CompanySettings </name>
+        <name>CompanySettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Community </name>
+        <name>Community</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CommunityTemplateDefinition </name>
+        <name>CommunityTemplateDefinition</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CommunityThemeDefinition </name>
+        <name>CommunityThemeDefinition</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CompactLayout </name>
+        <name>CompactLayout</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ConnectedApp	 </name>
+        <name>ConnectedApp</name>
     </types> 
 
     <types>
         <members>*</members>
-        <name> ContentAsset </name>
-    </types> 
-
-
-    <types>
-        <members>*</members>
-        <name> ContractSettings </name>
+        <name>ContentAsset</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CorsWhitelistOrigin </name>
+        <name>ContractSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CriteriaBasedSharingRule </name>
+        <name>CorsWhitelistOrigin</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CspTrustedSite </name>
+        <name>CriteriaBasedSharingRule</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomApplication </name>
+        <name>CspTrustedSite</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomApplicationComponent </name>
+        <name>CustomApplication</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomFeedFilter </name>
+        <name>CustomApplicationComponent</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomField </name>
+        <name>CustomFeedFilter</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomLabel </name>
+        <name>CustomField</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Custom Metadata Types  </name>
+        <name>CustomLabel</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomMetadata </name>
+        <name>Custom Metadata Types</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomLabels </name>
+        <name>CustomMetadata</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomObject </name>
+        <name>CustomLabels</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomObjectTranslation </name>
+        <name>CustomObject</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomPageWebLink	 </name>
+        <name>CustomObjectTranslation</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomPermission </name>
+        <name>CustomPageWebLink</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomSite </name>
+        <name>CustomPermission</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> CustomTab </name>
+        <name>CustomSite</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> DataCategoryGroup </name>
+        <name>CustomTab</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> DelegateGroup </name>
+        <name>DataCategoryGroup</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> DuplicateRule </name>
+        <name>DelegateGroup</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> EclairGeoData </name>
+        <name>DuplicateRule</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> EntitlementProcess </name>
+        <name>EclairGeoData</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> EntitlementSettings </name>
+        <name>EntitlementProcess</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> EntitlementTemplate </name>
+        <name>EntitlementSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> EventDelivery </name>
+        <name>EntitlementTemplate</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> EventSubscription </name>
+        <name>EventDelivery</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ExternalServiceRegistration </name>
+        <name>EventSubscription</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ExternalDataSource	 </name>
+        <name>ExternalServiceRegistration</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> FeatureParameterBoolean </name>
+        <name>ExternalDataSource</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> FeatureParameterDate </name>
+        <name>FeatureParameterBoolean</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> FeatureParameterInteger </name>
+        <name>FeatureParameterDate</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> FieldSet </name>
+        <name>FeatureParameterInteger</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> FileUploadAndDownloadSecuritySettings </name>
+        <name>FieldSet</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> FlexiPage </name>
+        <name>FileUploadAndDownloadSecuritySettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Flow </name>
+        <name>FlexiPage</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> FlowCategory </name>
+        <name>Flow</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> FlowDefinition </name>
+        <name>FlowCategory</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ForecastingSettings </name>
+        <name>FlowDefinition</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> GlobalValueSet </name>
+        <name>ForecastingSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> GlobalValueSetTranslation </name>
+        <name>GlobalValueSet</name>
+    </types> 
+
+
+    <types>
+        <members>*</members>
+        <name>GlobalValueSetTranslation</name>
     </types> 
 
 
@@ -464,377 +464,367 @@
 
     <types>
         <members>*</members>
-        <name> HomePageLayout </name>
+        <name>HomePageLayout</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> IdeasSettings </name>
+        <name>IdeasSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Index </name>
+        <name>Index</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> InstalledPackage </name>
+        <name>InstalledPackage</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> KeywordList </name>
+        <name>KeywordList</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> KnowledgeSettings </name>
+        <name>KnowledgeSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Layout </name>
+        <name>Layout</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> LightningBolt </name>
+        <name>LightningBolt</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> LightningComponentBundle	 </name>
+        <name>LightningComponentBundle</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> LightningExperienceTheme </name>
+        <name>LightningExperienceTheme</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> LiveChatAgentConfig </name>
+        <name>LiveChatAgentConfig</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> LiveChatButton </name>
+        <name>LiveChatButton</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> LiveChatDeployment </name>
+        <name>LiveChatDeployment</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> LiveChatSensitiveDataRule </name>
+        <name>LiveChatSensitiveDataRule</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ManagedTopics </name>
+        <name>ManagedTopics</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> MatchingRule </name>
+        <name>MatchingRule</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> MilestoneType </name>
-    </types> 
-
-
-
-    <types>
-        <members>*</members>
-        <name> MobileSettings </name>
-    </types> 
-
-
-
-    <types>
-        <members>*</members>
-        <name> ModerationRule </name>
-    </types> 
-
-
-
-    <types>
-        <members>*</members>
-        <name> NamedCredential </name>
-    </types> 
-
-
-
-    <types>
-        <members>*</members>
-        <name> NameSettings </name>
-    </types> 
-
-
-
-    <types>
-        <members>*</members>
-        <name> Network </name>
-    </types> 
-
-
-
-    <types>
-        <members>*</members>
-        <name> NetworkBranding </name>
-    </types> 
-
-
-
-    <types>
-        <members>*</members>
-        <name> OmniChannelSettings </name>
-    </types> 
-
-
-
-    <types>
-        <members>*</members>
-        <name> OpportunitySettings </name>
+        <name>MilestoneType</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> OrderSettings </name>
-    </types> 
-
-
-
-    <types>
-        <members>*</members>
-        <name> OrgPreferenceSettings </name>
-    </types> 
-
-
-
-    <types>
-        <members>*</members>
-        <name> OwnerSharingRule </name>
+        <name>MobileSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> PathAssistant </name>
+        <name>ModerationRule</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> PathAssistantSettings	 </name>
+        <name>NamedCredential</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> PermissionSet </name>
+        <name>NameSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> PlatformCachePartition </name>
+        <name>Network</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Portal </name>
+        <name>NetworkBranding</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> PostTemplate </name>
+        <name>OmniChannelSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> PresenceDeclineReason </name>
+        <name>OpportunitySettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> PresenceUserConfig </name>
+        <name>OrderSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ProductSettings </name>
+        <name>OrgPreferenceSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Profile </name>
+        <name>OwnerSharingRule</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> OwnerSharingRule </name>
+        <name>PathAssistant</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ProfilePasswordPolicy </name>
+        <name>PathAssistantSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ProfileSessionSetting </name>
+        <name>PermissionSet</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Queue </name>
+        <name>PlatformCachePartition</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> QueueRoutingConfig </name>
+        <name>Portal</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> QuickAction </name>
+        <name>PostTemplate</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> QuoteSettings	 </name>
+        <name>PresenceDeclineReason</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> RemoteSiteSetting </name>
+        <name>PresenceUserConfig</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ReportType </name>
+        <name>ProductSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Role </name>
+        <name>Profile</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> SamlSsoConfig </name>
+        <name>OwnerSharingRule</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ProfileSessionSetting </name>
+        <name>ProfilePasswordPolicy</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Scontrol </name>
+        <name>ProfileSessionSetting</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> SecuritySettings </name>
+        <name>Queue</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ServiceChannel </name>
+        <name>QueueRoutingConfig</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ServicePresenceStatus </name>
+        <name>QuickAction</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> SharingRules	 </name>
+        <name>QuoteSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> SharingSet </name>
+        <name>RemoteSiteSetting</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> SiteDotCom </name>
+        <name>ReportType</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Skill </name>
+        <name>Role</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> StandardValueSetTranslation </name>
+        <name>SamlSsoConfig</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> SynonymDictionary </name>
+        <name>ProfileSessionSetting</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Workflow </name>
+        <name>Scontrol</name>
+    </types> 
+
+
+    <types>
+        <members>*</members>
+        <name>SecuritySettings </name>
+    </types> 
+
+
+    <types>
+        <members>*</members>
+        <name>ServiceChannel</name>
+    </types> 
+
+
+    <types>
+        <members>*</members>
+        <name>ServicePresenceStatus</name>
+    </types> 
+
+
+    <types>
+        <members>*</members>
+        <name>SharingRules</name>
+    </types> 
+
+
+    <types>
+        <members>*</members>
+        <name>SharingSet</name>
+    </types> 
+
+
+    <types>
+        <members>*</members>
+        <name>SiteDotCom</name>
+    </types> 
+
+
+    <types>
+        <members>*</members>
+        <name>Skill</name>
+    </types> 
+
+
+    <types>
+        <members>*</members>
+        <name>StandardValueSetTranslation</name>
+    </types> 
+
+
+    <types>
+        <members>*</members>
+        <name>SynonymDictionary</name>
+    </types> 
+
+
+    <types>
+        <members>*</members>
+        <name>Workflow</name>
     </types>
 
 
