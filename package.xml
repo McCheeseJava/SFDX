@@ -3,181 +3,170 @@
 
     <types>
         <members>*</members>
-        <name> AccountSettings </name>
+        <name>AccountSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ActionLinkGroupTemplate </name>
+        <name>ActionLinkGroupTemplate</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ActivitiesSettings </name>
+        <name>ActivitiesSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> AddressSettings </name>
+        <name>AddressSettings</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ApexClass </name>
+        <name>ApexClass</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ApexComponent </name>
+        <name>ApexComponent</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ApexPage </name>
+        <name>ApexPage</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ApexTrigger </name>
+        <name>ApexTrigger</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> AppMenu </name>
+        <name>AppMenu</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ApprovalProcess </name>
+        <name>ApprovalProcess</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> ArticleType </name>
+        <name>ArticleType</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> AssignmentRules	 </name>
+        <name>AssignmentRules</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Audience </name>
+        <name>Audience</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> AuthProvider	 </name>
+        <name>AuthProvider</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> AuraDefinitionBundle </name>
+        <name>AuraDefinitionBundle</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> AutoResponseRules </name>
+        <name>AutoResponseRules</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> BaseSharingRule	 </name>
+        <name>BaseSharingRule</name>
     </types> 
 
 
     <types>
         <members>*</members>
-        <name> Bot </name>
+        <name>Bot</name>
     </types> 
-
 
 
     <types>
         <members>*</members>
-        <name> BrandingSet </name>
+        <name>BrandingSet</name>
     </types> 
-
 
 
     <types>
         <members>*</members>
-        <name> BusinessHoursSettings </name>
+        <name>BusinessHoursSettings</name>
     </types> 
-
 
 
     <types>
         <members>*</members>
-        <name> BusinessProcess </name>
+        <name>BusinessProcess</name>
     </types> 
-
 
 
     <types>
         <members>*</members>
-        <name> CallCenter </name>
+        <name>CallCenter</name>
     </types> 
-
 
 
     <types>
         <members>*</members>
-        <name> CaseSettings </name>
+        <name>CaseSettings</name>
     </types> 
-
 
 
     <types>
         <members>*</members>
-        <name> ChatterAnswersSettings </name>
+        <name>ChatterAnswersSettings</name>
     </types> 
-
 
 
     <types>
         <members>*</members>
-        <name> ChatterExtension </name>
+        <name>ChatterExtension</name>
     </types> 
-
 
 
     <types>
         <members>*</members>
-        <name> CleanDataService </name>
+        <name>CleanDataService</name>
     </types> 
-
 
 
     <types>
         <members>*</members>
-        <name> CMSConnectSource </name>
+        <name>CMSConnectSource</name>
     </types> 
-
 
 
     <types>
         <members>*</members>
         <name> CompanySettings </name>
     </types> 
-
 
 
     <types>
